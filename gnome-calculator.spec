@@ -4,7 +4,7 @@
 #
 Name     : gnome-calculator
 Version  : 3.24.0
-Release  : 6
+Release  : 7
 URL      : https://download.gnome.org/sources/gnome-calculator/3.24/gnome-calculator-3.24.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-calculator/3.24/gnome-calculator-3.24.0.tar.xz
 Summary  : No detailed summary available
@@ -19,7 +19,6 @@ BuildRequires : gettext
 BuildRequires : gmp-dev
 BuildRequires : intltool
 BuildRequires : itstool
-BuildRequires : libxml2-python
 BuildRequires : mpc-dev
 BuildRequires : mpfr-dev
 BuildRequires : perl(XML::Parser)
@@ -80,7 +79,14 @@ locales components for the gnome-calculator package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1490636907
+export SOURCE_DATE_EPOCH=1492267168
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export FCFLAGS="$CFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export FFLAGS="$CFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export CXXFLAGS="$CXXFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -92,7 +98,7 @@ export no_proxy=localhost
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1490636907
+export SOURCE_DATE_EPOCH=1492267168
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-calculator
