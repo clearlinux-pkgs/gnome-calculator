@@ -4,7 +4,7 @@
 #
 Name     : gnome-calculator
 Version  : 3.24.0
-Release  : 7
+Release  : 8
 URL      : https://download.gnome.org/sources/gnome-calculator/3.24/gnome-calculator-3.24.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-calculator/3.24/gnome-calculator-3.24.0.tar.xz
 Summary  : No detailed summary available
@@ -13,8 +13,8 @@ License  : GPL-3.0
 Requires: gnome-calculator-bin
 Requires: gnome-calculator-lib
 Requires: gnome-calculator-data
-Requires: gnome-calculator-locales
 Requires: gnome-calculator-doc
+Requires: gnome-calculator-locales
 BuildRequires : gettext
 BuildRequires : gmp-dev
 BuildRequires : intltool
@@ -28,6 +28,7 @@ BuildRequires : pkgconfig(gtk+-3.0)
 BuildRequires : pkgconfig(gtksourceview-3.0)
 BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(libxml-2.0)
+Patch1: lazy-rates.patch
 
 %description
 No detailed description available
@@ -76,17 +77,21 @@ locales components for the gnome-calculator package.
 
 %prep
 %setup -q -n gnome-calculator-3.24.0
+%patch1 -p1
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1492267168
+export SOURCE_DATE_EPOCH=1493475845
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
-export CXXFLAGS="$CXXFLAGS -O3 -Os -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export CFLAGS="$CFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export FCFLAGS="$CFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export FFLAGS="$CFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export CXXFLAGS="$CXXFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -94,11 +99,11 @@ make V=1  %{?_smp_mflags}
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1492267168
+export SOURCE_DATE_EPOCH=1493475845
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-calculator
@@ -119,6 +124,10 @@ rm -rf %{buildroot}
 /usr/share/dbus-1/services/org.gnome.Calculator.SearchProvider.service
 /usr/share/glib-2.0/schemas/org.gnome.calculator.gschema.xml
 /usr/share/gnome-shell/search-providers/org.gnome.Calculator-search-provider.ini
+
+%files doc
+%defattr(-,root,root,-)
+%doc /usr/share/man/man1/*
 /usr/share/help/C/gnome-calculator/absolute.page
 /usr/share/help/C/gnome-calculator/base.page
 /usr/share/help/C/gnome-calculator/boolean.page
@@ -899,10 +908,6 @@ rm -rf %{buildroot}
 /usr/share/help/zh_TW/gnome-calculator/superscript.page
 /usr/share/help/zh_TW/gnome-calculator/trigonometry.page
 /usr/share/help/zh_TW/gnome-calculator/variables.page
-
-%files doc
-%defattr(-,root,root,-)
-%doc /usr/share/man/man1/*
 
 %files lib
 %defattr(-,root,root,-)

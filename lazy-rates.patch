@@ -1,0 +1,11 @@
+--- gnome-calculator-3.24.0/lib/currency.c~	2017-03-21 07:04:52.000000000 +0000
++++ gnome-calculator-3.24.0/lib/currency.c	2017-04-29 14:21:27.872253401 +0000
+@@ -648,7 +648,7 @@
+ 	_tmp177_ = currency_new ("ZAR", _tmp176_, "R");
+ 	_tmp175_->priv->currencies = g_list_append (_tmp175_->priv->currencies, _tmp177_);
+ 	_tmp178_ = default_currency_manager;
+-	currency_manager_download_rates (_tmp178_);
++//	currency_manager_download_rates (_tmp178_);
+ 	_tmp179_ = default_currency_manager;
+ 	_tmp180_ = _g_object_ref0 (_tmp179_);
+ 	result = _tmp180_;
