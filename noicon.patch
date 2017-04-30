@@ -1,0 +1,10 @@
+--- gnome-calculator-3.21.2/src/gnome-calculator.c~	2016-02-15 17:13:32.000000000 +0000
++++ gnome-calculator-3.21.2/src/gnome-calculator.c	2017-04-30 03:56:45.011679990 +0000
+@@ -1142,7 +1142,6 @@
+ 	_tmp4_ = g_path_get_basename (_tmp3_);
+ 	_g_free0 (calculator_program_name);
+ 	calculator_program_name = _tmp4_;
+-	gtk_window_set_default_icon_name ("accessories-calculator");
+ 	_tmp5_ = calculator_new ();
+ 	app = _tmp5_;
+ 	_tmp6_ = args;

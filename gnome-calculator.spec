@@ -4,7 +4,7 @@
 #
 Name     : gnome-calculator
 Version  : 3.24.0
-Release  : 8
+Release  : 9
 URL      : https://download.gnome.org/sources/gnome-calculator/3.24/gnome-calculator-3.24.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-calculator/3.24/gnome-calculator-3.24.0.tar.xz
 Summary  : No detailed summary available
@@ -29,6 +29,7 @@ BuildRequires : pkgconfig(gtksourceview-3.0)
 BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(libxml-2.0)
 Patch1: lazy-rates.patch
+Patch2: noicon.patch
 
 %description
 No detailed description available
@@ -78,13 +79,14 @@ locales components for the gnome-calculator package.
 %prep
 %setup -q -n gnome-calculator-3.24.0
 %patch1 -p1
+%patch2 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1493475845
+export SOURCE_DATE_EPOCH=1493524743
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -103,7 +105,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1493475845
+export SOURCE_DATE_EPOCH=1493524743
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-calculator
