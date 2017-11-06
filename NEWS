@@ -1,3 +1,71 @@
+Overview of changes in gnome-calculator 3.26.0
+    * Update Persian translation (Arash Mousavi)
+    * Fix gettext-domain (Piotr Drąg)
+    * Updated Latvian translation (Rūdolfs Mazurs)
+	* Updated Russian translation (Stas Solovey)
+    * Updated Dutch translation (hanniedu)
+    * Updated Punjabi translation (A S Alam)
+    * Updated Danish translation (Ask Hjorth Larsen)
+    * Updated Bulgarian translation (Lyubomir Vasilev)
+    * Updated Catalan translation (Jordi Mas)
+    * Updated Kazakh translation (Baurzhan Muftakhidinov)
+    * Updated Basque translation (Inaki Larranaga Murgoitio)
+
+Overview of changes in gnome-calculator 3.25.92
+    * Updated Lithuanian translation (Aurimas Černius)
+    * Updated Danish translation (Ask Hjorth Larsen)
+    * Updated Latvian translation (Rūdolfs Mazurs)
+	* Updated Italian translation (Milo Casagrande)
+    * Updated Dutch translation (hanniedu)
+    * Updated Chinese (Taiwan) translation (Cheng-Chia Tseng)
+    * Updated Bulgarian translation (Alexander Shopov)
+    * Updated Korean translation (Changwoo Ryu)
+    * Updated Slovak translation (Dušan Kazik)
+    * Updated Brazilian Portuguese translation (Rafael Fontenelle)
+    * Updated Hungarian translation (Balázs Úr)
+
+Overview of changes in gnome-calculator 3.25.91
+    * Updated Galician translation (Fran Dieguez)
+    * Updated Slovenian translation (Matej Urbančič)
+    * Updated Turkish translation (Çağatay Yiğit Şahin)
+    * Updated Serbian translation (Мирослав Николић)
+    * Updated Finnish translation (Jiri Grönroos)
+    * Updated French translation (Claude Paroz)
+
+Overview of changes in gnome-calculator 3.25.90
+    * Fixed incorrect bit toggle buttons. bgo#785850 (Robert Roth)
+    * Updated Swedish translation (Anders Jonsson)
+    * Updated Czech translation (Marek Cernocky)
+    * Re-enable Portuguese help translation. bgo#784427 (Piotr Drąg)
+    * Updated Arabic translation (Khaled Hosny)
+    * Stop using deprecated calls (Robert Roth)
+    * Update Kazakh translation (Baurzhan Muftakhidinov)
+    * Updated Spanish translation (Daniel Musteles)
+    * Updated Indonesian translation (Kukuh Syafaat)
+    * Updated Friulian translation (Fabio Tomat)
+    * Updated Vietnamese translation (Trần Ngọc Quân)
+    * Add Polish help translation (Piotr Drąg)
+    * Updated Hungarian translation (Balázs Meskó)
+    * Fix an XML tag in Portuguese help translation (Piotr Drąg)
+    * Fixed appdata validation. bgo#784033 (Robert Roth)
+    * Fixed appdata.xml installation. bgo#783986 (Dominique Leuenberger)
+
+Overview of changes in gnome-calculator 3.25.3
+    * Updated Spanish translation (Daniel Mustieles)
+    * Updated Catalan translation (Jordi Mas)
+    * Updated Portuguese translation (Piotr Drąg)
+    * Updated Indonesian translation (Kukuh Syafaat)
+    * Updated Friulian translation (Fabio Tomat)
+    * Stop using intltool (Robert Ancell)
+    * Fix XML tags in Portuguese help translation (Piotr Drąg)
+    * Move resources into src directory (Robert Ancell)
+
+Overview of changes in gnome-calculator 3.25.2
+    * Updated Latvian translation (Rūdolfs Mazurs)
+    * Updated Portuguese translation (Tiago Santos)
+    * Updated Catalan translation (Jordi Mas)
+    * Update parser to allow complex conversions (PioneerAxon)
+
 Overview of changes in gnome-calculator 3.24.0
     * Updated Korean translation (Changwoo Ryu)
     * Updated Russian translation (Yuri Myasoedov)
