@@ -4,7 +4,7 @@
 #
 Name     : gnome-calculator
 Version  : 3.28.0
-Release  : 15
+Release  : 16
 URL      : https://download.gnome.org/sources/gnome-calculator/3.28/gnome-calculator-3.28.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-calculator/3.28/gnome-calculator-3.28.0.tar.xz
 Summary  : No detailed summary available
@@ -90,7 +90,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522185548
+export SOURCE_DATE_EPOCH=1522187568
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -109,7 +109,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1522185548
+export SOURCE_DATE_EPOCH=1522187568
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-calculator
