@@ -4,7 +4,7 @@
 #
 Name     : gnome-calculator
 Version  : 3.28.1
-Release  : 19
+Release  : 20
 URL      : https://download.gnome.org/sources/gnome-calculator/3.28/gnome-calculator-3.28.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-calculator/3.28/gnome-calculator-3.28.1.tar.xz
 Summary  : No detailed summary available
@@ -12,8 +12,9 @@ Group    : Development/Tools
 License  : GPL-3.0
 Requires: gnome-calculator-bin
 Requires: gnome-calculator-data
-Requires: gnome-calculator-doc
+Requires: gnome-calculator-license
 Requires: gnome-calculator-locales
+Requires: gnome-calculator-man
 BuildRequires : gettext
 BuildRequires : gmp-dev
 BuildRequires : itstool
@@ -40,6 +41,8 @@ No detailed description available
 Summary: bin components for the gnome-calculator package.
 Group: Binaries
 Requires: gnome-calculator-data
+Requires: gnome-calculator-license
+Requires: gnome-calculator-man
 
 %description bin
 bin components for the gnome-calculator package.
@@ -56,9 +59,18 @@ data components for the gnome-calculator package.
 %package doc
 Summary: doc components for the gnome-calculator package.
 Group: Documentation
+Requires: gnome-calculator-man
 
 %description doc
 doc components for the gnome-calculator package.
+
+
+%package license
+Summary: license components for the gnome-calculator package.
+Group: Default
+
+%description license
+license components for the gnome-calculator package.
 
 
 %package locales
@@ -69,6 +81,14 @@ Group: Default
 locales components for the gnome-calculator package.
 
 
+%package man
+Summary: man components for the gnome-calculator package.
+Group: Default
+
+%description man
+man components for the gnome-calculator package.
+
+
 %prep
 %setup -q -n gnome-calculator-3.28.1
 
@@ -77,7 +97,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1524069767
+export SOURCE_DATE_EPOCH=1530082303
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -89,6 +109,8 @@ CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --prefix /usr --b
 ninja -v -C builddir
 
 %install
+mkdir -p %{buildroot}/usr/share/doc/gnome-calculator
+cp COPYING %{buildroot}/usr/share/doc/gnome-calculator/COPYING
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang gnome-calculator
 
@@ -118,8 +140,7 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/share/metainfo/org.gnome.Calculator.appdata.xml
 
 %files doc
-%defattr(-,root,root,-)
-%doc /usr/share/man/man1/*
+%defattr(0644,root,root,0755)
 /usr/share/help/C/gnome-calculator/absolute.page
 /usr/share/help/C/gnome-calculator/base.page
 /usr/share/help/C/gnome-calculator/boolean.page
@@ -960,6 +981,15 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/share/help/zh_TW/gnome-calculator/superscript.page
 /usr/share/help/zh_TW/gnome-calculator/trigonometry.page
 /usr/share/help/zh_TW/gnome-calculator/variables.page
+
+%files license
+%defattr(-,root,root,-)
+/usr/share/doc/gnome-calculator/COPYING
+
+%files man
+%defattr(-,root,root,-)
+/usr/share/man/man1/gcalccmd.1.gz
+/usr/share/man/man1/gnome-calculator.1.gz
 
 %files locales -f gnome-calculator.lang
 %defattr(-,root,root,-)
