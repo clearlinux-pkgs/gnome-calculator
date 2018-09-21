@@ -4,7 +4,7 @@
 #
 Name     : gnome-calculator
 Version  : 3.30.0
-Release  : 22
+Release  : 23
 URL      : https://download.gnome.org/sources/gnome-calculator/3.30/gnome-calculator-3.30.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-calculator/3.30/gnome-calculator-3.30.0.tar.xz
 Summary  : No detailed summary available
