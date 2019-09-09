@@ -1,24 +1,70 @@
-Overview of changes in gnome-calculator 3.32.2
-    * Snap build updates (Ken VanDine)
-    * Updated Chinese translation (Dingzhong Chen)
-    * Fixed numbers with octal prefix #110, #114 (Robert Roth)
+Overview of changes in gnome-calculator 3.34.0
+    * Updated Finnish translation (Jiri Grönroos)
 
-Overview of changes in gnome-calculator 3.32.1
-    * Snap build update (Ken VanDine)
-    * Updated Basque translation (Asier Sarasua Garmendia)
+Overview of changes in gnome-calculator 3.33.92
+    * Updated Czech translation (Marek Černocký)
+    * Updated Finnish translation (Jiri Grönroos)
+    * Updated German translation (Tim Sabsch)
+    * Updated Lithuanian translation (Aurimas Černius)
+    * Updated Polish translation (Piotr Drąg)
+    * Updated Persian translation (Danial Behzadi)
+    * Updated Serbian translation (Марко М. Костић (Marko M. Kostić))
+    * Updated Latvian translation (Rūdolfs Mazurs)
+    * Updated Galician translation (Fran Diéguez)
+    * Updated British English translation (Zander)
+    * Updated Turkish translation (Ahmet Elgün)
+    * Updated Japanese translation (Ryuta Fujii)
+    * Updated Catalan translation (Jordi Mas)
     * Updated French translation (Charles Monzat)
+    * Updated Korean translation (Changwoo Ryu)
+    * README updates (Roger)
+
+Overview of changes in gnome-calculator 3.33.90
+    * Updated Dutch translation (Nathan Follens)
     * Updated Croatian translation (Goran Vidović)
-    * Updated Danish translation (Ask Hjorth Larsen)
+    * Updated Swedish translation (Anders Jonsson)
+    * Updated Friulian translation (Fabio Tomat)
+    * Updated Slovenian translation (Matej Urbančič)
+    * Updated Karbi translation (J T)
+    * Updated Basque translation (Asier Sarasua Garmendia)
+    * Updated Brazilian Portuguese translation (Rafael Fontenelle)
+    * Updated Catalan translation (Jordi Mas)
+    * Updated Romanian translation (Florentina Mușat)
+    * Flatpak build cleanup (Jordan Petridis)
+    * Debug messages cleanup (Daniel Espinosa Ortiz)
+
+Overview of changes in gnome-calculator 3.33.3
+    * Updated Indonesian translation (Kukuh Syafaat)
+    * Updated Hungarian translation (Balázs Úr)
+    * Updated Spanish translation (Daniel Mustieles)
+    * Updated Greek translation (Efstathios Iosifidis)
+    * calculator library build fixes (Daniel Espinosa Ortiz)
+    * CI build fixes (Ken VanDine)
+    * Added mnemonics for primary menu items #113 (Robert Roth)
+    * Dropped leading zeros octal prefix #114, #109, #110 (Robert Roth)
+
+Overview of changes in gnome-calculator 3.33.2
+    * Separated calculator library !19 (Daniel Espinosa Ortiz)
+    * Ensure icon is available for shell (Ken VanDine)
+    * Updated French translation (Charles Monzat)
+    * Updated Catalan translation (Jordi Mas)
+    * Support entering left/right shift with keyboard #98 (Robert Roth)
+    * Updated Croatian translation (Goran Vidović)
     * Fixed CFA conversion rate #102 (Robert Roth)
-    * Removed copy icon from search provider result #103 (Robert Roth)
+    * Remove copy icon from search provider results #103 (Robert Roth)
     * Do not assume octal base for binary numbers #101 (Robert Roth)
-    * Use currency name instead of display name for conversion #106 (Robert Roth)
-    * Updated application icon in help (Andre Klapper)
-    * Fixed search provider results broken #104 (Pascal Nowack)
-    * Ignore keypresses while calculating result #47 (Robert Roth)
-    * Only allow entering one decimal point #5 (Robert Roth)
-    * Use meson build compatible with older meson (Robert Roth)
     * Show thousands separator in unit converter #102 (Robert Roth)
+    * Use currency name instead of display name for conversion #106 (Robert Roth)
+    * Quit warns and closes all windows #51 (Robert Roth)
+    * Avoid normalizing the equation twice in search #104 (Pascal Nowack)
+    * Ignore keypresses while calculating results #47 (Robert Roth)
+    * Only allow one decimal point in numbers #5 (Robert Roth)
+    * Application icon updated in help (Andre Klapper)
+    * Updated Danish translation (Ask Hjorth Larsen)
+    * Updated Friulian translation (Fabio Tomat)
+    * Updated Indonesian translation (Kukuh Syafaat)
+    * Updated Basque translation (Asier Sarasua Garmendia)
+    * Updated Chinese translation (Dingzhong Chen)
 
 Overview of changes in gnome-calculator 3.32.0
     * Updated Esperanto translation (Kristjan Esperanto)
@@ -54,7 +100,7 @@ Overview of changes in gnome-calculator 3.31.91
     * Updated Galician translation (Fran Diéguez)
     * Updated Turkish translation (Emin Tufan)
     * Updated Indonesian translation (Kukuh Syafaat)
-    * Updated Polish translation (Piotr Drąg)
+    * Updated Polish translation ()
     * Updated Hungarian translation (Balázs Úr)
     * Additional syntax for unit conversion (Tuomas Mikkola)
     * Updated Spanish translation (Daniel Mustieles)
@@ -4680,4 +4726,4 @@ Overview of changes in calctool 4.0.0
 * Released under a GNU LIBRARY GENERAL PUBLIC LICENSE (LGPL) license.
 * Just an XView graphics driver currently provided.
 
-----
+----Piotr Drąg
