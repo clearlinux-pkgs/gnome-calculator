@@ -4,7 +4,7 @@
 #
 Name     : gnome-calculator
 Version  : 3.38.0
-Release  : 33
+Release  : 34
 URL      : https://download.gnome.org/sources/gnome-calculator/3.38/gnome-calculator-3.38.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-calculator/3.38/gnome-calculator-3.38.0.tar.xz
 Summary  : GNOME Calculator Libray GTK Interface
