@@ -1,17 +1,58 @@
-Overview of changes in gnome-calculator 3.38.2
-    * Updated Czech translation (Marek Černocký)
-    * Updated Indonesian translation (Andika Triwidada)
-    * Fixed radians and degrees preference swapped (Delton Ding)
+Overview of changes in gnome-calculator 40.0
+    * Updated Translations
 
-Overview of changes in gnome-calculator 3.38.1
-    * Updated Italian translation (Janvitus)
-    * Updated Friulian translation (Fabio Tomat)
-    * Updated Latvian translation (Rūdolfs Mazurs)
-    * Updated French translation (Thibault Martin)
-    * Updated Portuguese translation (Juliano de Souza Camargo)
-    * Updated Hebrew translation (Yosef Or Boczko)
-    * Updated Slovak translation (Dušan Kazik)
-    * Fixed GNOME Shell search result copy to clipboard #178 (Robert Roth)
+Overview of changes in gnome-calculator 40.rc
+    * Updated Translations
+    * Resize window after switching mode !78 (joshas)
+    * Fixed compilation warnings (Robert Roth)
+    * Support offline currency conversion tests #208 (Robert Roth)
+    * Use official unit on conversion button click #207 (Robert Roth)
+    * Fixed temperature unit typos #211 (Robert Roth)
+    * Ellipsize conversion labels #17 (Robert Roth)
+    * Added Ctrl+Delete shortcut for clearing the current equation #187 (Robert Roth)
+    * Allow multiple decimal points #166. #5 (Robert Roth)
+    * Added Ctrl+O shortcut for degrees symbol (Robert Roth)
+    * Use gtk-sourceview 4.8 !80 (Robert Roth)
+
+Overview of changes in gnome-calculator 40.beta
+    * Updated Translations
+    * Fixed CI build (Robert Roth)
+    * Fixed issues with initial loading of currencies (Robert Roth)
+    * Rework currency retrieval preparing for currency provider plugins (Robert Roth)
+    * Fixed commandline conversions #33 (Robert Roth)
+    * Added currency conversion tests (Robert Roth)
+    * Added support for frequencies conversion (Dave Hulst)
+    * Added support for converting to and from weeks (Dave Hulst)
+    * Added support for converting to and from centuries and decades (Dave Hulst)
+    * Increase buttons font size #201 (Robert Roth)
+    * Added % button to Advanced mode (Dave Hulst)
+    * Show 4 decimals in converter instead of only two #203 (Robert Roth)
+    * Added style classes to buttons !76 (Dave Hulst)
+
+Overview of changes in gnome-calculator 40.alpha
+    * Updated Translations
+    * Use libhandy for window and headerbar !69 (Cristopher Davis)
+    * Use C instead of Clr in help !70 (scootergrisen)
+    * Fixed broken currency conversion on first start #199 (Robert Roth)
+    * Removed duplicate word from help #198 (Robert Roth)
+    * Added lbs shortcut for pounds conversion (Robert Roth)
+    * Fixed inconsistent word size (A. M. Roswell)
+    * Removed unused trunc button from programming mode #41 (Robert Roth)
+    * Fixed deprecation warnings
+    * Added Serbian Dinar with fixed rate #49 (Robert Roth)
+    * Added Bangladeshi Taka with fixed rate #191 (A. M. Roswell)
+    * Updated mailing list contact to Discourse (Robert Roth)
+    * Added basic help page for programming mode (A. M. Roswell)
+    * Added insert character code button (A. M. Roswell)
+    * Dim inapplicable bits on word size change #189 (A. M. Roswell)
+    * Make the conversion labels selectable (Robert Roth)
+    * Do not convert on swap #170 (Robert Roth)
+    * Word size changer in programming mode !58 (A. M. Roswell)
+    * Added metric cups conversion unit !53 (Lucy Coleclough)
+    * Fixed astronomical unit conversion !51 (Thomas Nilsson)
+    * Fixed feet-based units name, added mph and kph shortcuts #180 (Robert Roth)
+    * Use shell copy to clipboard action #178 (Robert Roth)  
+    * Fixed preferences of angle units !56 (Delton Ding)
 
 Overview of changes in gnome-calculator 3.38.0
     * Updated German translation (Mario Blättermann)
