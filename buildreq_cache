@@ -1,4 +1,5 @@
-41.1
+42.0
 libgee-dev
 pkgconfig(gee-0.8)
-pkgconfig(libhandy-1)
+pkgconfig(gtksourceview-5)
+pkgconfig(libadwaita-1)

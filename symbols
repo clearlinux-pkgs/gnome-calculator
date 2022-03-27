@@ -1,3 +1,4 @@
+libgcalc-2.so.1.0.1:gcalc_assig_error_get_type
 libgcalc-2.so.1.0.1:gcalc_assig_error_quark
 libgcalc-2.so.1.0.1:gcalc_assign_construct
 libgcalc-2.so.1.0.1:gcalc_assign_get_type
@@ -78,6 +79,7 @@ libgcalc-2.so.1.0.1:gcalc_function_cos_new
 libgcalc-2.so.1.0.1:gcalc_function_cosh_construct
 libgcalc-2.so.1.0.1:gcalc_function_cosh_get_type
 libgcalc-2.so.1.0.1:gcalc_function_cosh_new
+libgcalc-2.so.1.0.1:gcalc_function_error_get_type
 libgcalc-2.so.1.0.1:gcalc_function_error_quark
 libgcalc-2.so.1.0.1:gcalc_function_evaluate
 libgcalc-2.so.1.0.1:gcalc_function_exp_construct
@@ -105,6 +107,7 @@ libgcalc-2.so.1.0.1:gcalc_function_tanh_construct
 libgcalc-2.so.1.0.1:gcalc_function_tanh_get_type
 libgcalc-2.so.1.0.1:gcalc_function_tanh_new
 libgcalc-2.so.1.0.1:gcalc_group_construct
+libgcalc-2.so.1.0.1:gcalc_group_error_get_type
 libgcalc-2.so.1.0.1:gcalc_group_error_quark
 libgcalc-2.so.1.0.1:gcalc_group_get_type
 libgcalc-2.so.1.0.1:gcalc_group_new
@@ -194,6 +197,7 @@ libgcalc-2.so.1.0.1:gcalc_parameter_construct
 libgcalc-2.so.1.0.1:gcalc_parameter_get_type
 libgcalc-2.so.1.0.1:gcalc_parameter_new
 libgcalc-2.so.1.0.1:gcalc_parser_construct
+libgcalc-2.so.1.0.1:gcalc_parser_error_get_type
 libgcalc-2.so.1.0.1:gcalc_parser_error_quark
 libgcalc-2.so.1.0.1:gcalc_parser_get_type
 libgcalc-2.so.1.0.1:gcalc_parser_new
@@ -215,6 +219,7 @@ libgcalc-2.so.1.0.1:gcalc_result_get_type
 libgcalc-2.so.1.0.1:gcalc_result_new
 libgcalc-2.so.1.0.1:gcalc_solver_add_expression
 libgcalc-2.so.1.0.1:gcalc_solver_construct
+libgcalc-2.so.1.0.1:gcalc_solver_error_get_type
 libgcalc-2.so.1.0.1:gcalc_solver_error_quark
 libgcalc-2.so.1.0.1:gcalc_solver_get_equation_manager
 libgcalc-2.so.1.0.1:gcalc_solver_get_type
@@ -222,10 +227,12 @@ libgcalc-2.so.1.0.1:gcalc_solver_new
 libgcalc-2.so.1.0.1:gcalc_solver_set_equation_manager
 libgcalc-2.so.1.0.1:gcalc_solver_solve
 libgcalc-2.so.1.0.1:gcalc_term_construct
+libgcalc-2.so.1.0.1:gcalc_term_error_get_type
 libgcalc-2.so.1.0.1:gcalc_term_error_quark
 libgcalc-2.so.1.0.1:gcalc_term_get_type
 libgcalc-2.so.1.0.1:gcalc_term_new
 libgcalc-2.so.1.0.1:gcalc_variable_construct
+libgcalc-2.so.1.0.1:gcalc_variable_error_get_type
 libgcalc-2.so.1.0.1:gcalc_variable_error_quark
 libgcalc-2.so.1.0.1:gcalc_variable_get_type
 libgcalc-2.so.1.0.1:gcalc_variable_new
