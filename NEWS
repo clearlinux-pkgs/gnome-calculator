@@ -1,3 +1,25 @@
+Overview of changes in gnome-calculator 43.0.1
+    * Fixed appdata versioning (Robert Roth)
+
+Overview of changes in gnome-calculator 43.0
+    * Removed old issue tracker references !128 (Jake Dane)
+
+Overview of changes in gnome-calculator 43.rc
+    * Updated translations
+    * Fix crash when entering new function name !124 (Nathaniel Russel)
+    * Fix source view border !121 (Alexander Mikhaylenko)
+    * Flatpak build update !122 (Bartłomiej Piotrowski)
+    * Port about window to libadwaita !119 (Christopher Davis)
+    * Port to libsoup3 !120 (AppleME)
+    
+Overview of changes in gnome-calculator 43.alpha
+    * Updated translations
+    * Fixed broken undo/redo #266 (Robert Roth)
+    * Make sure variable name definitions work with whitespace too (Robert Roth)
+    * Fix translatable strings !116 (Maximiliano)
+    * Fixed missing implicit multiplication with variable and root #279 (Robert Roth)
+    * meson warning fixes (Robert Roth)
+
 Overview of changes in gnome-calculator 42.2
     * Updated translations
     * Fixed incorrect history with bits toggling #281 (Robert Roth)
