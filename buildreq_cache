@@ -1,6 +1,5 @@
-43.0.1
+44.0
 libgee-dev
 pkgconfig(gee-0.8)
 pkgconfig(gtksourceview-5)
 pkgconfig(libadwaita-1)
-pkgconfig(libsoup-3.0)
