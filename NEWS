@@ -1,3 +1,43 @@
+Overview of changes in gnome-calculator 45.0.2
+    * Updated translations
+
+Overview of changes in gnome-calculator 45.0.1
+    * Retagging release
+
+Overview of changes in gnome-calculator 45.rc
+    * Updated translations
+
+Overview of changes in gnome-calculator 45.0
+    * Updated translations
+    * Search provider performance improvements !154, !155, !156 (Christian Hergert)
+    * Use numeric font instead of monospace #290 (Robert Roth)
+    * Fixed electron-volt unit abbreviation #347 (Robert Roth)
+    * Fixed erroneous Joule unit name #348 (Robert Roth)
+    * Fixed missing build dependency !157 (Jeremy Bicha)
+
+Overview of changes in gnome-calculator 45.beta
+    * Updated translations
+    * Fixed variable and function popover reverse typing #335, #320 (Robert Roth)
+    * Better left/right cursor key handling !153 (Seth Falco)
+    * Improved toolbar using Adwaita library !151 (Felipe Kinoshita)
+    * Flatpak build improvements (Robert Roth)
+
+Overview of changes in gnome-calculator 45.alpha
+    * Updated translations
+    * Remember window size #328 !146 (Leonard K, Alice Mikhaylenko)
+    * Allow opening Main Menu by pressing F10 !142 !149 (Automeris naranja)
+    * Extend bit-shifting limit #306 !143 (J Sory)
+    * Added new energy units !143 (J Sory)
+    * Added TWD support via Bank of Canada rates #27 !148 (Mário Adriano)
+    * Added legal section for exchange rate source attribution (Robert Roth)
+    * Added United Nations Treasury exchange rate datasource (Robert Roth)
+    * Added Jamaican Dollar currency #291 (Robert Roth)
+    * Added Ukrainian hryvnia currency #278 (Robert Roth)
+    * Added Nigerian Naira currency #142 (Robert Roth)
+    * Changed symbolic icon to C on the clear button #336 (Robert Roth)
+    * Dropped VEF currency support #78 (Robert Roth)
+    * Use new vala-nightly SDK extension for flatpak (Robert Roth)
+
 Overview of changes in gnome-calculator 44.0
     * Updated translations
 
