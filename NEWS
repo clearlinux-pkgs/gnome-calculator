@@ -1,8 +1,39 @@
-Overview of changes in gnome-calculator 46.1
+Overview of changes in gnome-calculator 47.0
     * Updated translations
-    * Disable undo action if nothing to undo #280 (Robert Roth)
+    * Fixed flatpak build !181 (Hari Rana)
+    * Don't use symbolic icons for the window !182 (Balló György)
+
+Overview of changes in gnome-calculator 47.rc
+    * Updated translations
+    * Added brand colors !178 (Brage Fuglseth)
+
+Overview of changes in gnome-calculator 47.beta
+    * Updated translations
+    * Fix hex string conversion for bitwise operator !177 (Xiong Nandi)
+    * Force LTR for buttons !171 (Khalid Abu Shawarib)
+    * Added kWh, MJ, KJ unit support #417 (Robert Roth)
+    * Sort conversion categories alphabetically #395 (Robert Roth)
+    * Removed obsolete bulgarian translations #402 (Robert Roth)
+    * Only allow alphanumeric values for variable names #396 (Robert Roth)
+    * Replace base_label with buttons !173 (Clément Mathieu--Drif)
+    * Updated flathub badge !174 (Brage Fuglseth)
+    * Use adwaita spinner !175 (Cristopher Davis)
+
+Overview of changes in gnome-calculator 47.alpha
+    * Updated translations
+    * Support VND currency #387 (Robert Roth)
+    * Fixed incorrect event handling #392 (Robert Roth)
+    * Removed Shift left/right dropdown #330 (Robert Roth)
+    * Improved popover remove buttons #401 (Robert Roth)
+    * Use result format instead of number format #399 (Robert Roth)
+    * Ported to Adwaita adaptive dialogs (Robert Roth)
+    * Disable undo button if nothing to undo #280 (Robert Roth)
+    * Metainfo improvements (Andre Klapper)
     * Keep last conversion options at launch #351 (Robert Roth)
-    * Fixed event controller propagation phase #392 (Robert Roth)
+    * Minor improvements to the undo button !166 (Automeris naranja)
+    * Make sure to use the correct app id for development builds !170 (Christopher Davis)
+    * Stop using orange accent color !169 (Alice Mikhaylenko)
+    * A11y announce status changes !172 (Lukáš Tyrychtr)
 
 Overview of changes in gnome-calculator 46.0
     * Updated translations
