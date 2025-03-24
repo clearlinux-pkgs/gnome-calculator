@@ -1,10 +1,48 @@
-Overview of changes in gnome-calculator 47.1
+Overview of changes in gnome-calculator 48.0.2
+    * Fix building with non-nightly vala
+
+Overview of changes in gnome-calculator 48.0.1
+    * Code cleanup and minor improvements (fcusr)
+    * Allow scrolling the display using scroll wheel (fcusr)
+    * Fixed conversions not working #451 (Robert Roth)
+
+Overview of changes in gnome-calculator 48.0
     * Updated translations
-    * Announce the calculation result even when done through the buttons #411 !184 (Lukáš Tyrychtr)
-    * Set "Insert Character Code" dialog as modal !188 (ɐꓩuɐɹɐu sᴉɹǝɯoʇnɐ)
-    * Fixed incorrect units in financial mode #424 (Robert Roth)
-    * Changed history view default size #419 (Robert Roth)
-    * Fixed incorrectly sized text entry #405 (Robert Roth)
+    * Fixed converter context menus not working (fcusr)
+    * Code cleanup and improvements (fcusr, Adrien Plazas)
+    * Improvements in function usage, brackets usage (Adrien Plazas)
+
+Overview of changes in gnome-calculator 48.rc
+    * Updated translations
+    * UI and styling fixes (fcusr, Adrien Plazas)
+    * Do not steal focus on window move #422 (Robert Roth)
+
+Overview of changes in gnome-calculator 48.beta
+    * Updated translations
+    * Added Conversion mode (fcusr)
+    * Ported financial dialogs to modern widgets (fcusr)
+    * programming: disable digits not available in current number base
+    * buttons: improvements to popover styling
+
+Overview of changes in gnome-calculator 48.alpha
+    * Updated translations
+    * a11y: Announce the calculation result even when done through the buttons #411 (Lukáš Tyrychtr)
+    * display: Cycle through history with Alt+Left/Right buttons #296 (Hari Rana)
+    * character-dialog: Modernized the character dialog (Hari Rana)
+    * history-entry: Apply dim label to some buttons (Hari Rana)
+    * math-preferences: Use header capitalization (Automeris naranja)
+    * converter: Use correct kJ unit shortName #427 (Robert Roth)
+    * converter: Fixed incorrect units in financial mode #424 (Robert Roth)
+    * converter: Added nanosecond unit (Robert Roth)
+    * tests: Fixed broken test on slower computers #434 (Robert Roth)
+    * history-view: Improve default size #419 (Robert Roth)
+    * display: Fixed incorrectly sized text entry #405 (Robert Roth)
+    * converter: Add pressure units !179 (Olexander Movchan, Anders Jonsson)
+    * converter: Updated russian ruble currency symbol and name #440 (Robert Roth)
+    * display: Fix crash on using Shift+Insert #442 (Robert Roth)
+    * converter: Fixed MJ and kWh conversion factors #445 (Çağatay Yiğit Şahin)
+    * tests: Added test to validate MJ and kWh conversion (Robert Roth)
+    * keyboard: Added shortcut to clear history #398 (Claudio Silva Junior)
 
 Overview of changes in gnome-calculator 47.0
     * Updated translations
